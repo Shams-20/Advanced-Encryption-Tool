@@ -27,7 +27,7 @@ def encrypt_file(password: str, input_path: str, output_path: str):
 
     # 3. Generate IV
     iv = get_random_bytes(IV_SIZE)
-
+ 
     # 4. AES-CBC Encrypt
     cipher = AES.new(key, AES.MODE_CBC, iv)
 
